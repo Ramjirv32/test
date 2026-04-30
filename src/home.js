@@ -1,5 +1,7 @@
 
 import React, { useEffect } from "react";
+import { FaCalendarAlt } from "react-icons/fa";
+
 
 import "./home.css"; // Import your CSS file
 
@@ -10,8 +12,8 @@ import aboutsponsors1 from "./images/about/About_ecouncil.jpg";
 import aboutsponsors2 from "./images/about/About_spark.png";
 import aboutsponsors3 from "./images/about/About_hack.png";
 
-import whocanjoin from "./images/join/join_topic-1.png";
-import whocanjoinImage from "./images/join/join_para.png";
+
+
 import whocanjoinImage2 from "./images/join/join_hacker.png";
 
 import whyjoin from "./images/join/Join_topic.png";
@@ -94,8 +96,16 @@ const Home = () => {
         </div>
 
         <div class="Notification" >
-          <div class="m-2">
-            <a href="#home"><img class="calender" src="head_date.png" alt="Event Date" /></a>
+          <div class="notification-container">
+            <div className="event-date-content">
+              <FaCalendarAlt className="calendar-icon" />
+              <span>May 26 & 27, 2026</span>
+            </div>
+            <div className="prizes-content">
+              <p className="prizes-title">PRIZES WORTH</p>
+              <p className="prizes-amount">₹50,000</p>
+              <p className="reg-fee">Registration Fee: ₹500 per head</p>
+            </div>
           </div>
         </div>
 
@@ -104,13 +114,11 @@ const Home = () => {
             <img src="Reg_btn.png" alt="Register" />
           </a>
         </div>
+        <div className="hero-image">
+          <img src="/ctf_flag.png" alt="CTF Cybersecurity Competition" />
+        </div>
       </div>
 
-
-      {/* Right Side Image */}
-      <div className="hero-image">
-        <img src="/ctf_flag.png" alt="CTF Cybersecurity Competition" />
-      </div>
 
 
 
@@ -175,12 +183,17 @@ const Home = () => {
       </section>
 
       <section className="whocan" id="who-can-join">
-        <div className="whocanjoin">
-          <img src={whocanjoin} alt="Who can join" />
+        <div className="whocanjoin-title">
+          WHO CAN JOIN <span className="highlight-ctf">&lt;/THE CTF&gt;</span>
         </div>
         <div className="whocanjoin-content">
-          <div className="whocanjoin-image">
-            <img src={whocanjoinImage} alt="Join details" />
+          <div className="whocanjoin-text">
+            <p>
+              This CTF is for all infosec beginners, cybersecurity enthusiasts, and anyone eager to test their skills while saving the planet.
+            </p>
+            <p>
+              The competition is open to students. Teams must have 2 to 4 members. Any form of cheating, collusion, or unethical behavior will lead to disqualification. Attacking event infrastructure or sharing flags and solutions with other teams is strictly prohibited.
+            </p>
           </div>
           <div className="whocanjoin-image2">
             <img src={whocanjoinImage2} alt="Join hacker" />

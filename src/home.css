@@ -48,6 +48,7 @@ section {
   width: 100%;
   gap: 40px;
 }
+
 .imageheader img {
 
   width: 170px;
@@ -109,6 +110,68 @@ section {
   margin-left: 20px;
 }
 
+.notification-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.event-date-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.calendar-icon {
+  color: #00ff00;
+  font-size: 2.5rem;
+}
+
+.prizes-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.prizes-title {
+  color: #00ff00;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.prizes-amount {
+  color: #00ff00;
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00;
+}
+
+.reg-fee {
+  color: #00ff00;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+.whocanjoin-title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  margin: 40px 0;
+  letter-spacing: 3px;
+}
+
+.highlight-ctf {
+  color: #00ff00;
+  text-shadow: 0 0 15px #00ff00;
+}
+
 .btn {
   position: relative;
   margin-left: 20px;
@@ -141,10 +204,13 @@ section {
 
 
 .hero-image {
-  position: relative;
+  position: absolute;
+  top: 15%;
+  right: 0;
   width: 50%;
   max-width: 50%;
   overflow: hidden;
+  z-index: 1;
 }
 
 .hero-image img {
@@ -311,8 +377,23 @@ section {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   width: 100%;
+}
+
+.whocanjoin-text {
+  flex: 1;
+  color: #000;
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  padding-left: 40px;
+  max-width: 800px;
+  font-weight: 500;
+}
+
+.whocanjoin-text p {
+  margin-bottom: 25px;
 }
 
 .whocanjoin-image2 {
@@ -446,6 +527,7 @@ section {
 .navbar li {
   display: inline;
 }
+
 .navbar a {
   text-decoration: none;
   color: white;
@@ -483,6 +565,7 @@ section {
 }
 
 @media (max-width: 768px) {
+
   /* Header responsive */
   .imageheader {
     flex-wrap: wrap;
@@ -670,7 +753,7 @@ section {
 
   /* Adjust all images */
   img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
   }
 
@@ -683,104 +766,116 @@ section {
   }
 
   .imageheader {
-  width: 100%;
-  height: auto;
-  gap: 5px;
-  margin-right: 0px;
-  margin-left: 0px;
-  padding: 10px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+    width: 100%;
+    height: auto;
+    gap: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-.imageheader img {
+  .imageheader img {
 
-  width: 80px;
-  height: auto;
+    width: 10px;
+    height: 10px;
 
-}
+  }
 
-/* Section 1 */
-.section1 {
-  padding: 10px;
-}
+  /* Section 1 */
+  .section1 {
+    padding: 10px;
+    position: relative;
+    min-height: 100vh;
+  }
 
-.national-container {
-  padding: 10px;
-}
+  .national-container {
+    padding: 10px;
+  }
 
-.glitch-above,
-.glitch-above2,
-.glitch-above3 {
-  max-width: 200px;
-  padding: 5px;
-}
+  .glitch-above,
+  .glitch-above2,
+  .glitch-above3 {
+    max-width: 120px;
+    padding: 5px;
+  }
 
-/* Prize section */
-.prize-title {
-  font-size: 1.2rem;
-  text-align: center;
-}
+  /* Prize section */
+  .prize-title {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 
-.prize-amount {
-  font-size: 2rem;
-  text-align: center;
-}
+  .prize-amount {
+    font-size: 2rem;
+    text-align: center;
+  }
 
-.footerimage {
-  width: 100%;
-  margin-left: 0;
-  padding: 20px 10px;
-  text-align: center;
-}
+  .footerimage {
+    width: 100%;
+    margin-left: 0;
+    padding: 20px 10px;
+    text-align: center;
+  }
 
 
   /* Header images */
   .glitch-above {
-    padding: 3%;
-    max-width: 300px;
+    padding: 2%;
+    max-width: 150px;
   }
 
   .glitch-above2 {
-    padding: 3%;
-    max-width: 290px;
+    padding: 2%;
+    max-width: 140px;
   }
 
   .glitch-above3 {
-    padding: 3%;
-    max-width: 200px;
+    padding: 2%;
+    max-width: 100px;
   }
 
   .Notification {
-    padding: 0%;
-    margin: 5%;
-
+    margin: 10px 5%;
   }
 
-  /* Notification */
-  .Notification img {
-    padding: 0%;
-    max-width: 150px;
+  .event-date-content {
+    font-size: 1.2rem;
+    gap: 8px;
+  }
+
+  .calendar-icon {
+    font-size: 1.5rem;
+  }
+
+  .prizes-title {
+    font-size: 1rem;
+  }
+
+  .prizes-amount {
+    font-size: 2.2rem;
+  }
+
+  .reg-fee {
+    font-size: 0.8rem;
+  }
+
+  .notification-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
   }
 
   /* Register Button */
   .btn img,
   .countdownregisbtn img {
-    max-width: 150px;
+    max-width: 80px;
   }
 
   /* Hero image */
   .hero-image {
-    margin-left: 0;
-    margin-top: 0;
-    align-items: right;
     display: none;
-  }
-
-  .hero-image img {
-    max-width: 100%;
-    padding-top: 1px;
-
   }
 
   /* About section */
@@ -825,6 +920,11 @@ section {
     border-radius: 15px;
   }
 
+  .whocanjoin-title {
+    font-size: 1.8rem;
+    margin: 20px 0;
+  }
+
   .countdown {
     width: 95%;
     padding: 10px;
@@ -839,13 +939,20 @@ section {
     width: 130px;
   }
 
+  .whocanjoin-text {
+    font-size: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
   .whocanjoin-content {
     padding: 10px;
   }
 
-  }
 
-  .whocanjoin-image2 img {
+
   .whocanjoin-image2 {
     width: 90%;
     max-width: 150px;
