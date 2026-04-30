@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 
 import "./home.css"; // Import your CSS file
 
@@ -95,7 +95,7 @@ const Home = () => {
 
         <div class="Notification" >
           <div class="m-2">
-            <a href="#"><img class="calender" src="head_date.png" alt="" /></a>
+            <a href="#home"><img class="calender" src="head_date.png" alt="Event Date" /></a>
           </div>
         </div>
 
@@ -128,25 +128,25 @@ const Home = () => {
         <section className="about">
           <div className="about-content">
             <div className="about-image">
-              <img src={aboutImage} alt="He Image" />
+              <img src={aboutImage} alt="Hacker details" />
             </div>
             <div className="about-image2">
-              <img src={aboutImage2} alt="Hero Image" />
+              <img src={aboutImage2} alt="Event details" />
             </div>
           </div>
           <div className="aboutsponsors">
-            <img src={aboutsponsors} alt="Sponsors Image" />
+            <img src={aboutsponsors} alt="Sponsors" />
           </div>
 
           <div className="about-content2">
             <div className="sponsors1">
-              <img src={aboutsponsors1} alt="Sponsors Image" />
+              <img src={aboutsponsors1} alt="E-council" />
             </div>
             <div className="sponsors2">
-              <img src={aboutsponsors2} alt="Sponsors Image" />
+              <img src={aboutsponsors2} alt="Spark" />
             </div>
             <div className="sponsors3">
-              <img src={aboutsponsors3} alt="Sponsors Image" />
+              <img src={aboutsponsors3} alt="Hack" />
             </div>
           </div>
 
@@ -176,14 +176,14 @@ const Home = () => {
 
       <section className="whocan" id="who-can-join">
         <div className="whocanjoin">
-          <img src={whocanjoin} alt="He Image" />
+          <img src={whocanjoin} alt="Who can join" />
         </div>
         <div className="whocanjoin-content">
           <div className="whocanjoin-image">
-            <img src={whocanjoinImage} alt="He Image" />
+            <img src={whocanjoinImage} alt="Join details" />
           </div>
           <div className="whocanjoin-image2">
-            <img src={whocanjoinImage2} alt="Hero Image" />
+            <img src={whocanjoinImage2} alt="Join hacker" />
           </div>
         </div>
       </section>
@@ -192,20 +192,20 @@ const Home = () => {
 
       <section className="countdown">
         <div className="whyjoin">
-          <img src={whyjoin} alt="He Image" />
+          <img src={whyjoin} alt="Why join" />
         </div>
         <div className="about-content2">
           <div className="sponsors1">
-            <img src={whyjoinImage1} alt="Sponsors Image" />
+            <img src={whyjoinImage1} alt="Why join hack" />
           </div>
           <div className="sponsors2">
-            <img src={whyjoinImage2} alt="Sponsors Image" />
+            <img src={whyjoinImage2} alt="Why join win" />
           </div>
           <div className="sponsors3">
-            <img src={whyjoinImage3} alt="Sponsors Image" />
+            <img src={whyjoinImage3} alt="Why join meet" />
           </div>
           <div className="sponsors3">
-            <img src={whyjoinImage4} alt="Sponsors Image" />
+            <img src={whyjoinImage4} alt="Why join be" />
           </div>
         </div>
 

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c87758e7.css",
+    "main.js": "/static/js/main.96526193.js",
+    "static/js/453.66e65fd4.chunk.js": "/static/js/453.66e65fd4.chunk.js",
+    "static/media/image3.png": "/static/media/image3.e18cd6803483b5f55d83.png",
+    "static/media/About_Hacker.png": "/static/media/About_Hacker.ec5230228b326b6bf729.png",
+    "static/media/Group 1.png": "/static/media/Group 1.4ab81b813b7e23cb86a5.png",
+    "static/media/join_hacker.png": "/static/media/join_hacker.34e26ea57e1247d5d188.png",
+    "static/media/sparkout-logo.png": "/static/media/sparkout-logo.1d85cc14db460150eb41.png",
+    "static/media/About_Event.png": "/static/media/About_Event.de3e7fada3e7d5ee498e.png",
+    "static/media/join_para.png": "/static/media/join_para.7ec313ff5f61d666afa0.png",
+    "static/media/About_spark.png": "/static/media/About_spark.3f839e43d2dae86aa268.png",
+    "static/media/LOGO.png": "/static/media/LOGO.a2937117a392c0b1713b.png",
+    "static/media/About_hack.png": "/static/media/About_hack.c1ca0130c9eb28b91691.png",
+    "static/media/join_be-4.png": "/static/media/join_be-4.2b8109e181116320918e.png",
+    "static/media/join_meet-3.png": "/static/media/join_meet-3.2373d7f38f5bb99432b4.png",
+    "index.html": "/index.html",
+    "main.c87758e7.css.map": "/static/css/main.c87758e7.css.map",
+    "main.96526193.js.map": "/static/js/main.96526193.js.map",
+    "453.66e65fd4.chunk.js.map": "/static/js/453.66e65fd4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c87758e7.css",
+    "static/js/main.96526193.js"
+  ]
+}
